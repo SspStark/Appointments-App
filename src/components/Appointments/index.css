@@ -1,0 +1,140 @@
+.bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#fbc7d4, #9796f0);
+  min-height: 100vh;
+}
+.app-container {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  font-family: 'Roboto';
+  margin-top: 30px;
+}
+.appointments-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 86%;
+  max-width: 972px;
+}
+.appointments-inputs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 60px;
+}
+.heading {
+  color: #171f46;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.image {
+  display: none;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.label {
+  color: #b5b7c4;
+  font-size: 11px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.inputs {
+  height: 35px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #b5b7c4;
+  padding: 8px 0px 8px 16px;
+  outline: none;
+  margin-bottom: 22px;
+}
+.add-button {
+  background-color: #8b5cf6;
+  color: white;
+  font-size: 13px;
+  border-radius: 8px;
+  align-self: flex-start;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 6px 12px 6px 12px;
+}
+.line {
+  width: 100%;
+  border: 1px solid #b5b7c4;
+  margin-top: 20px;
+}
+.starred-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.appointments {
+  color: #171f46;
+  font-size: 18px;
+  font-weight: 500;
+}
+.button {
+  background-color: transparent;
+  color: #9897f0;
+  border: 1px solid #9897f0;
+  border-radius: 15px;
+  padding: 4px 12px 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+.active {
+  color: white;
+  background-color: #9897f0;
+  border: none;
+}
+.lists-container {
+  padding-left: 0px;
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .app-container {
+    width: 80%;
+    max-width: 1110px;
+  }
+  .image {
+    display: flex;
+    width: 380px;
+    height: 250px;
+  }
+  .heading {
+    font-size: 32px;
+    margin-bottom: 45px;
+  }
+  .form {
+    width: 30%;
+    min-width: 250px;
+  }
+  .starred-button-container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .lists-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
